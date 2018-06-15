@@ -35,7 +35,7 @@ public class TransformationAndActionApp {
 
     // Step 1 - Creates a session on a local master
     SparkSession spark = SparkSession.builder()
-        .appName("Analysing catalyst")
+        .appName("Analysing Catalyst's behavior")
         .master("local")
         .getOrCreate();
     long t1 = System.currentTimeMillis();
@@ -68,7 +68,7 @@ public class TransformationAndActionApp {
       df = df
           .withColumn("avg", expr("(lcl+ucl)/2"))
           .withColumn("lcl2", df.col("lcl"))
-          .withColumn("ucl2", df.col("ucl"));
+          .withColumn("ucl2", df.col("Upper Confidence Limit"));
       if (mode.compareToIgnoreCase("full") == 0) {
         df = df
             .drop(df.col("avg"))
