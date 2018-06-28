@@ -7,7 +7,7 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
 /**
- * CSV ingestion in a dataframe.
+ * Transformation and action.
  * 
  * @author jgp
  */

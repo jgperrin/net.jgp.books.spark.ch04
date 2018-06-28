@@ -9,7 +9,8 @@ public class HelloWorldApp {
 
   /**
    * main() is your entry point to the application, let's display 50,000 hello
-   * world.
+   * world: it takes about the same time as creating 7.5m datapoints using
+   * Spark, just for the fun of it...
    * 
    * @param args
    */
