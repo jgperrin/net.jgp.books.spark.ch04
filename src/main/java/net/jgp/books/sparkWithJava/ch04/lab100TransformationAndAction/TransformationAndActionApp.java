@@ -68,7 +68,7 @@ public class TransformationAndActionApp {
       df = df
           .withColumn("avg", expr("(lcl+ucl)/2"))
           .withColumn("lcl2", df.col("lcl"))
-          .withColumn("ucl2", df.col("Upper Confidence Limit"));
+          .withColumn("ucl2", df.col("ucl"));
       if (mode.compareToIgnoreCase("full") == 0) {
         df = df
             .drop(df.col("avg"))
