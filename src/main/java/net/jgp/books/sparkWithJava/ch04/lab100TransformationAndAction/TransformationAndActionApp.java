@@ -46,13 +46,13 @@ public class TransformationAndActionApp {
         .option("header", "true")
         .load(
             "data/NCHS_-_Teen_Birth_Rates_for_Age_Group_15-19_in_the_United_States_by_County.csv");
-    Dataset<Row> df0 = df;
+    Dataset<Row> initalDf = df;
     long t2 = System.currentTimeMillis();
     System.out.println("2. Loading initial dataset ...... " + (t2 - t1));
 
     // Step 3 - Build a bigger dataset
     for (int i = 0; i < 60; i++) {
-      df = df.union(df0);
+      df = df.union(initalDf);
     }
     long t3 = System.currentTimeMillis();
     System.out.println("3. Building full dataset ........ " + (t3 - t2));
