@@ -5,3 +5,7 @@ The examples in this repository are support to the **Spark with Java** book by J
 Welcome to Spark with Java, chapter 4. This chapter is about laziness.
 
 The dataset used in this chapter is NCHS' teen birth rates for age group 15 to 19 in the United States, divided by County, from 2003 to 2015.
+
+---
+
+Follow me on Twitter to get updates about the book and Apache Spark: [@jgperrin](https://twitter.com/jgperrin).
