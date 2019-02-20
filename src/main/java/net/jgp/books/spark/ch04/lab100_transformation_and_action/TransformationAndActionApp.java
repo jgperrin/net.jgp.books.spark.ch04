@@ -1,4 +1,4 @@
-package net.jgp.books.sparkWithJava.ch04.lab100TransformationAndAction;
+package net.jgp.books.spark.ch04.lab100_transformation_and_action;
 
 import static org.apache.spark.sql.functions.expr;
 

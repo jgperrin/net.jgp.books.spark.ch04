@@ -1,4 +1,4 @@
-package net.jgp.books.sparkWithJava.ch04.lab900MiscStuff;
+package net.jgp.books.spark.ch04.lab900_misc;
 
 /**
  * Hello world.
