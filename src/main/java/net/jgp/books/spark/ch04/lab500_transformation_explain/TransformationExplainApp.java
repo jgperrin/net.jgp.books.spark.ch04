@@ -1,4 +1,4 @@
-package net.jgp.books.spark.ch04.lab200_transformation_explain;
+package net.jgp.books.spark.ch04.lab500_transformation_explain;
 
 import static org.apache.spark.sql.functions.expr;
 
