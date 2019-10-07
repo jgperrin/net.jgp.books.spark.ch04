@@ -6,7 +6,34 @@ Welcome to Spark with Java, chapter 4. This chapter is about laziness.
 
 The dataset used in this chapter is NCHS' teen birth rates for age group 15 to 19 in the United States, divided by County, from 2003 to 2015.
 
-Notes: 
+## Running PySpark
+
+    1. Clone this project
+    Assume that cloned this project to ${MY_HOME_DIR}
+
+    2. cd ${MY_HOME_DIR}/src/main/python
+
+    3. Execute the following spark-submit command to create a jar file to our this application
+    ```
+    spark-submit net/jgp/books/spark/ch04/lab200_transformation_and_action/transformationActionApp.py
+    ```
+
+## Running Scala
+
+    1. Clone this project
+       Assume that cloned this project to ${MY_HOME_DIR}
+
+    2. cd ${MY_HOME_DIR}
+
+    3. Create application jar file
+       ```mvn clean package```
+
+    3. Execute the following spark-submit command to create a jar file to our this application
+    ```
+    spark-submit net.jgp.books.spark.ch04.lab200_transformation_and_action.Transformation_ActionApp target/spark-chapter04-1.0.0-SNAPSHOT.jar
+    ```
+
+Notes:
  1. Due to renaming the packages to match more closely Java standards, this project is not in sync with the book's MEAP prior to v10.
 
 ---
