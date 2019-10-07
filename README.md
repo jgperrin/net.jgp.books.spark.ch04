@@ -28,9 +28,9 @@ The dataset used in this chapter is NCHS' teen birth rates for age group 15 to 1
     3. Create application jar file
        ```mvn clean package```
 
-    3. Execute the following spark-submit command to create a jar file to our this application
+    4. Execute the following spark-submit command to create a jar file to our this application
     ```
-    spark-submit net.jgp.books.spark.ch04.lab200_transformation_and_action.Transformation_ActionApp target/spark-chapter04-1.0.0-SNAPSHOT.jar
+    spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.Transformation_ActionApp target/spark-chapter04-1.0.0-SNAPSHOT.jar
     ```
 
 Notes:
