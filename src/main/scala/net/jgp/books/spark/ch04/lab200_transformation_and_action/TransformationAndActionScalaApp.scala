@@ -1,15 +1,14 @@
 package net.jgp.books.spark.ch04.lab200_transformation_and_action
 
 import org.apache.spark.sql.functions.{expr,col}
-import org.apache.spark.sql.{Dataset, Row, SparkSession}
-
+import org.apache.spark.sql.SparkSession
 
 /**
   * Transformation and action.
   *
   * @author rambabu.posa
   */
-object Transformation_ActionApp {
+object TransformationAndActionScalaApp {
 
   /**
     * main() is your entry point to the application.
@@ -17,7 +16,6 @@ object Transformation_ActionApp {
     * @param args
     */
   def main(args: Array[String]): Unit = {
-    // TODO : implement
     var mode:String = "noop"
     if (args.length != 0)
       mode = args(0)

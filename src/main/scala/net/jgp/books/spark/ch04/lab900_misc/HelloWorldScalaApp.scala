@@ -5,7 +5,7 @@ package net.jgp.books.spark.ch04.lab900_misc
   *
   * @author rambabu.posa
   */
-object Hello_WorldApp {
+object HelloWorldScalaApp {
 
   /**
     * main() is your entry point to the application, let's display 50,000

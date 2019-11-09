@@ -6,6 +6,11 @@
 import time
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import (lit,col,concat,expr)
+import os
+
+current_dir = os.path.dirname(__file__)
+relative_path = "../../../../data/NCHS_-_Teen_Birth_Rates_for_Age_Group_15-19_in_the_United_States_by_County.csv"
+absolute_file_path = os.path.join(current_dir, relative_path)
 
 mode=""
 t0 = int(round(time.time() * 1000))
@@ -19,8 +24,7 @@ t1 = int(round(time.time() * 1000))
 print("1. Creating a session ........... {}".format(t1 - t0))
 
 # Step 2 - Reads a CSV file with header, stores it in a dataframe
-df = spark.read.csv(header=True, inferSchema=True,
-                    path="../../../data/NCHS_-_Teen_Birth_Rates_for_Age_Group_15-19_in_the_United_States_by_County.csv")
+df = spark.read.csv(header=True, inferSchema=True,path=absolute_file_path)
 
 initalDf = df
 t2 = int(round(time.time() * 1000))
