@@ -20,7 +20,7 @@ The `TransformationAndActionApp` application does the following:
 
 ## Running the lab in Java
 
-For information on running the Java lab, see chapter 1 in [Spark in Action, 2nd edition](http://jgp.net/sia).
+For information on running the Java lab, see chapter 4 in [Spark in Action, 2nd edition](http://jgp.net/sia).
 
 ## Running the lab using PySpark
 
@@ -32,17 +32,21 @@ You will need:
 
 1. Clone this project
 
-    git clone https://github.com/jgperrin/net.jgp.books.spark.ch04
+```
+git clone https://github.com/jgperrin/net.jgp.books.spark.ch04
+```
 
 2. Go to the lab in the Python directory
 
-    cd net.jgp.books.spark.ch04/src/main/python/lab200_transformation_and_action/
+```
+cd net.jgp.books.spark.ch04/src/main/python/lab200_transformation_and_action/
+```
 
 3. Execute the following spark-submit command to create a jar file to our this application
 
-   ```
-    spark-submit transformationActionApp.py
-   ```
+```
+spark-submit transformationActionApp.py
+```
 
 ## Running the lab in Scala
 
@@ -54,21 +58,27 @@ You will need:
 
 1. Clone this project
 
-    git clone https://github.com/jgperrin/net.jgp.books.spark.ch04
+```
+git clone https://github.com/jgperrin/net.jgp.books.spark.ch04
+```
 
-2. cd net.jgp.books.spark.ch04
+2. Go to the lab directory
 
-3. Package application using sbt command
+```
+cd net.jgp.books.spark.ch04
+```
 
-   ```
-     sbt clean assembly
-   ```
+3. Package application using the `sbt` command
+
+```
+sbt clean assembly
+```
 
 4. Run Spark/Scala application using spark-submit command as shown below:
 
-   ```
-     spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.TransformationAndActionScalaApp target/scala-2.11/SparkInAction2-Chapter04-assembly-1.0.0.jar
-   ```
+```
+spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.TransformationAndActionScalaApp target/scala-2.11/SparkInAction2-Chapter04-assembly-1.0.0.jar
+```
 
 Notes: 
  1. [Java] Due to renaming the packages to match more closely Java standards, this project is not in sync with the book's MEAP prior to v10 (published in April 2019).
