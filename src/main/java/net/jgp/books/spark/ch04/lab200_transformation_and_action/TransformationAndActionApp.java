@@ -51,7 +51,7 @@ public class TransformationAndActionApp {
     System.out.println("2. Loading initial dataset ...... " + (t2 - t1));
 
     // Step 3 - Build a bigger dataset
-    for (int i = 0; i < 60; i++) {
+    for (int i = 0; i < 10; i++) {
       df = df.union(initalDf);
     }
     long t3 = System.currentTimeMillis();

@@ -83,6 +83,7 @@ spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.T
 Notes: 
  1. [Java] Due to renaming the packages to match more closely Java standards, this project is not in sync with the book's MEAP prior to v10 (published in April 2019).
  2. [Scala, Python] As of MEAP v14, we have introduced Scala and Python examples (published in October 2019).
+ 3. With Spark v3.0.0 preview 2, the number of iterations in lab \#200 went from 60 to 10.
  
 ---
 
