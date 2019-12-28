@@ -31,3 +31,6 @@ hs_err_pid*
 target/*
 project/target/*
 project/project/*
+/heapdump.*.phd
+/javacore.*.txt
+/Snap.*.trc
