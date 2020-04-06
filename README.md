@@ -77,7 +77,7 @@ sbt clean assembly
 4. Run Spark/Scala application using spark-submit command as shown below:
 
 ```
-spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.TransformationAndActionScalaApp target/scala-2.11/SparkInAction2-Chapter04-assembly-1.0.0.jar
+spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.TransformationAndActionScalaApp target/scala-2.12/SparkInAction2-Chapter04-assembly-1.0.0.jar
 ```
 
 Notes: 
