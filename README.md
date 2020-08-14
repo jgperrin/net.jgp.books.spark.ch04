@@ -22,7 +22,7 @@ The `TransformationAndActionApp` application does the following:
 
 ### Lab \#500
 
-The `TransformationExplainApp` builds on lab \#200 and show the use of the dataframe `explain()` method, which is the same as the `EXPLAIN` keyword in Spark SQL. All Spark v3 explain options for are available: simple, extended, codegen, cost, and formatted.
+The `TransformationExplainApp` builds on lab \#200 and shows the use of the dataframe `explain()` method, which is the same as the `EXPLAIN` keyword in Spark SQL. All Spark v3 explain options are used in the code: simple, extended, codegen, cost, and formatted.
 
 ## Running the labs
 
