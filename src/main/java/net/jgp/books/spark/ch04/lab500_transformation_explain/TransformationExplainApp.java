@@ -30,13 +30,13 @@ public class TransformationExplainApp {
 
     // Step 1 - Creates a session on a local master
     SparkSession spark = SparkSession.builder()
-        .appName("Shwoing execution plan")
+        .appName("Showing execution plan")
         .master("local")
         .getOrCreate();
 
     // Step 2 - Reads a CSV file with header, stores it in a dataframe
     Dataset<Row> df = spark.read().format("csv")
-        .option("header", "true")
+        .option("header", true)
         .load(
             "data/NCHS_-_Teen_Birth_Rates_for_Age_Group_15-19_in_the_United_States_by_County.csv");
     Dataset<Row> df0 = df;
@@ -54,8 +54,25 @@ public class TransformationExplainApp {
         .withColumn("lcl2", df.col("lcl"))
         .withColumn("ucl2", df.col("ucl"));
 
-    // Step 6 - explain
+    // Step 6 - explain - Spark v2
     df.explain();
+
+    // Step 6 - explain - Spark v3
+    
+    // simple
+    // df.explain("simple");
+
+    // extended
+    // df.explain("extended");
+
+    // codegen
+    // df.explain("codegen");
+
+    // cost
+    // df.explain("cost");
+
+    // formatted
+    df.explain("formatted");
 
   }
 }
