@@ -2,7 +2,7 @@ The examples in this repository are support to the **[Spark in Action, 2nd editi
 
 # Spark in Action, 2nd edition - chapter 4
 
-Welcome to Spark with Java, chapter 4. This chapter is about laziness.
+Welcome to Spark in Action, 2nd edition, chapter 4. This chapter is about laziness.
 
 The dataset used in this chapter is NCHS' teen birth rates for age group 15 to 19 in the United States, divided by County, from 2003 to 2015.
 
@@ -78,10 +78,11 @@ Step by step direction for lab \#200. You will need to adapt some steps for the 
 
     spark-submit --class net.jgp.books.spark.ch04.lab200_transformation_and_action.TransformationAndActionScalaApp target/scala-2.12/SparkInAction2-Chapter04-assembly-1.0.0.jar
 
-Notes: 
+##Notes
+ 
  1. [Java] Due to renaming the packages to match more closely Java standards, this project is not in sync with the book's MEAP prior to v10 (published in April 2019).
- 2. [Scala, Python] As of MEAP v14, we have introduced Scala and Python examples (published in October 2019).
- 3. With Spark v3.0.0 preview 2, the number of iterations in lab \#200 went from 60 to 10.
+ 1. [Scala, Python] As of MEAP v14, we have introduced Scala and Python examples (published in October 2019).
+ 1. With Spark v3.0.0 preview 2, the number of iterations in lab \#200 went from 60 to 10.
  
 ---
 
