@@ -66,7 +66,7 @@
           <arguments>
             <argument>-classpath</argument>
             <classpath />
-            <argument>net.jgp.books.spark.ch04.lab100_transformation_and_action.TransformationAndActionApp</argument>
+            <argument>net.jgp.books.spark.ch04.lab200_transformation_and_action.TransformationAndActionApp</argument>
             <argument>${execMode}</argument>
           </arguments>
         </configuration>
